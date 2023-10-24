@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "funcao.h"
 
 /* run this program using the console pauser or add your own getch, system("pause") or imput loop */
 
@@ -30,17 +31,17 @@ int main(int argc, char *argv[]){
 
 	 case 1:
 	//Soma
-	resultado= numero1+numero2;
+	resultado= soma (numero1, numero2);
         break;
 
 	 case 2:
 	//Subtracao
-	resultado= numero1-numero2;
+	resultado= subtracao (numero1, numero2);
 	break;
 
 	 case 3:
 	//Multiplicacao
-	resultado= numero1*numero2;
+	resultado= multiplicacao (numero1, numero2);
 	break;
 
         case 4:
@@ -52,7 +53,7 @@ int main(int argc, char *argv[]){
 
 	/*else(numero2>0);{*/
 	
-        resultado= numero1/numero2;
+        resultado= divisao (numero1, numero2);
 	break;
 
  }
